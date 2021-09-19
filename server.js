@@ -1,23 +1,20 @@
-'use strict';
+"use strict";
 const express = require('express');
-const app = express(); // class that create a new API
+const server = express();
 const cors = require('cors');
-const axios = require('axios');
-app.use(cors()); // connect API with cors
-require('dotenv').config(); // import dotenv
-const handleWeatherData= require('./controllers/weather');
-const handleMovieData=require('./controllers/movie');
+require('dotenv').config();
 const PORT = process.env.PORT;
+const handleWeather = require('./Controllers/Weather.controller');
+const handleMovie = require('./Controllers/Movies.controller');
+server.use(cors());
 
-app.get('/', (res, req) => {
-    res.send('home route')
+server.get('/', (req, res) => {
+    res.status(200).json({ "Layout": "like this" })
 })
-app.get('/weather', handleWeatherData)
+server.get('/weather', handleWeather)
+server.get('/movies', handleMovie)
 
-//=======================================
-app.get('/movies', handleMovieData)
+server.listen(PORT, () => {
+    console.log(`listening on port ${PORT}`)
 
-app.listen(PORT, () => {
-    console.log('hello');
 });
-
