@@ -1,11 +1,12 @@
-'use strict';
+"use strict";
 
-class ForecastWeather {
+
+
+class WeekForCast {
     constructor(date, description) {
         this.date = date;
         this.description = description;
     }
 
 }
-
-module.exports=ForecastWeather;
+module.exports = WeekForCast;

@@ -137,7 +137,7 @@
         "city_name": "Seattle",
         "lon": -122.3300624,
         "timezone": "America/Los_Angeles",
-        "lat":  47.6038321,
+        "lat": 47.6038321,
         "country_code": "US",
         "state_code": "WA"
     },
@@ -277,9 +277,9 @@
             }
         ],
         "city_name": "Paris",
-        "lon":2.3200410217200766,
+        "lon": 2.3514616,
         "timezone": "Europe/Paris",
-        "lat": 48.8588897,
+        "lat": 48.8566969,
         "country_code": "FR",
         "state_code": "11"
     },
@@ -419,7 +419,7 @@
             }
         ],
         "city_name": "Amman",
-        "lon": 	35.9239625,
+        "lon": 35.9239625,
         "timezone": "Asia/Amman",
         "lat": 31.9515694,
         "country_code": "JO",
